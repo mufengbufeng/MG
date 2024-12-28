@@ -158,7 +158,11 @@ namespace ET
                     continue;
                 }
 
-                BuildinFileManifest.Element element = new() { PackageName = fileInfo.Directory.Name, FileCRC32 = YooAsset.HashUtility.FileCRC32(fileInfo.FullName), FileName = fileInfo.Name };
+                BuildinFileManifest.Element element = new()
+                {
+                    PackageName = fileInfo.Directory.Name, FileCRC32 = YooAsset.HashUtility.FileCRC32(fileInfo.FullName),
+                    FileName = fileInfo.Name
+                };
                 manifest.BuildinFiles.Add(element);
             }
 
