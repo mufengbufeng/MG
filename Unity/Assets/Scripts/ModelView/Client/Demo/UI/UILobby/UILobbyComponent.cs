@@ -1,13 +1,13 @@
-﻿
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
 namespace ET.Client
 {
-	[ComponentOf(typeof(UI))]
-	public class UILobbyComponent : Entity, IAwake
-	{
-		public GameObject enterMap;
-		public Text text;
-	}
+    [ComponentOf(typeof(UI))]
+    public class UILobbyComponent : Entity, IAwake
+    {
+        public GameObject enterMap;
+        public Button EnterUIDemoBtn;
+        public Text text;
+    }
 }
